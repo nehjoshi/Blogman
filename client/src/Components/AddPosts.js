@@ -59,7 +59,7 @@ const AddPosts = () => {
             postContent: message,
             username: username
         }
-        axios.post('https://calm-plateau-40983.herokuapp.com/addpost', { data: data })
+        axios.post('https://blogman-server.herokuapp.com/addpost', { data: data })
             .then(res => {
                 setTimeout(() => {
                     setLoader(false);
