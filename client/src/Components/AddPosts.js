@@ -28,7 +28,7 @@ const AddPosts = () => {
             'auth-token': token
         }
 
-        axios.post('https://calm-plateau-40983.herokuapp.com/posts', { token: token })
+        axios.post('https://blogman-server.herokuapp.com/posts', { token: token })
             .then(res => {
                 
 
