@@ -27,7 +27,7 @@ const ViewPosts = () => {
 
         const post = { username: username, token: token };
         console.log("Token from viewposts.js: ", token)
-        axios.post('https://blogman-server.herokuapp.com/', { data: post })
+        axios.post('https://blogman-server.herokuapp.com/myposts', { data: post })
             .then(res => {
                 setInitResponse(res.data.message);
                 setPosts(res.data.posts.reverse());
@@ -42,7 +42,7 @@ const ViewPosts = () => {
 
         const data = { username: username, token: token };
         console.log("Token from viewposts.js: ", token)
-        axios.post('https://blogman-server.herokuapp.com/', { data: data })
+        axios.post('https://blogman-server.herokuapp.com/myposts', { data: data })
             .then(res => {
                 setInitResponse(res.data.message);
                 setPosts(res.data.posts.reverse());

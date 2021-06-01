@@ -42,7 +42,7 @@ const OnePost = (props) => {
             post: props.post
         }
         setOpen(false);
-        axios.post('/deletepost', { data: data })
+        axios.post('https://blogman-server.herokuapp.com/deletepost', { data: data })
             .then(res => {
                 console.log('Response after deleting: ', res);
                 console.log('Clossing dialog box');
