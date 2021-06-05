@@ -106,7 +106,7 @@ const ViewPosts = () => {
         console.log('Force update called!');
         const post = { username: username, token: token };
         console.log("Token from viewposts.js: ", token)
-        axios.post('https://calm-plateau-40983.herokuapp.com/myposts', { data: post })
+        axios.post('https://blogman-server.herokuapp.com/myposts', { data: post })
             .then(res => {
                 setInitResponse(res.data.message);
                 setPosts(res.data.posts.reverse());
