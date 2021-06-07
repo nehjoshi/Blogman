@@ -273,6 +273,9 @@
     font-family: 'Ubuntu', sans-serif;
     color: rgb(21, 21, 92);
 }
+.nav-expand {
+    display: none;
+}
 .post-secondary {
     
     color: rgb(121, 118, 112);
@@ -489,6 +492,7 @@
     .more-info-wrapper {
         top: 34vh;
     }
+ 
     .login-intro-text-heading {
         margin-top: 40px;
         font-size: 2rem;
