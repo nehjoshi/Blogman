@@ -49,10 +49,13 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         [theme.breakpoints.down("sm")]: {
-            fontSize: '1.7rem'
+            fontSize: '1.5rem'
         },
     },
     rules: {
+        [theme.breakpoints.down("sm")]: {
+            fontSize: '1.2rem'
+        },
         color: 'black'
     }
 
@@ -120,44 +123,7 @@ const AddPosts = () => {
     return (
         <>
             {initResponse === 'Success' ?
-                // <div className="post-content-wrapper">
-                //     <Container maxWidth={'lg'}>
-                //         <Grid container alignItems="center" >
-                //             <Grid item xs={12} sm={12}>
-                //                 <p className='post-heading'>Welcome {username}!</p>
-                //                 <br />
-                //             </Grid>
-                //             <Grid item xs={12} sm={12}>
-                //                 <p className="post-secondary">This is your chance to get creative! Feel free to add posts. Remember, keep the content suitable for all ages!</p>
-                //             </Grid>
-                //             <Grid item xs={12} sm={12}>
-                //                 <p className="post-secondary post-secondary-link">
-                //                     <Link to='post_requirements' style={{ textDecoration: 'none', color: 'rgb(121, 118, 112)' }}>
-                //                         Click here to read more about valid posts</Link></p><br />
-                //             </Grid>
-
-                //             <Grid item xs={12} sm={12}>
-                //                 <textarea className="post-input" placeholder="Example text here" onChange={handleChange}></textarea><br /><br />
-                //             </Grid>
-                //             <Grid item xs={12} sm={12}>
-                //                 <Button
-                //                     variant="contained"
-                //                     size="large"
-                //                     color="primary"
-                //                     style={{ margin: '0 auto', display: 'block' }}
-                //                     onClick={handleSubmit}>
-                //                     Submit Post
-                //         </Button><br/></Grid>
-                //         {loader &&
-                //          <Grid item xs={12} sm={12} lg={12}>
-                //              <Loader />
-                //             </Grid> }
-                //             <Grid item xs={12} sm={12}>
-                //                 <h4 className="post-secondary">{reponseAfterSend}</h4>
-                //             </Grid>
-                //         </Grid>
-                //     </Container>
-                // </div>
+  
 
                 <div className={classes.wrapper}>
                     <Grid container className={classes.formBox}>

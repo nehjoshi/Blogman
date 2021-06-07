@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'rgb(42, 42, 68)',
-        width: '40%',
+        width: '50%',
         height: '100vh',
         zIndex: '1000',
         transitionTimingFunction: 'ease-in',
@@ -24,7 +24,8 @@ const useStyles = makeStyles(() => ({
     },
     link: {
         color: 'white',
-        margin: '40px'
+        margin: '40px',
+        fontSize: '1rem'
     },
     close: {
         position: 'absolute',
